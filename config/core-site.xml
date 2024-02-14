@@ -1,0 +1,21 @@
+<configuration>
+    <!-- FS default name: The fully-qualified URI of the filesystem -->
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://namenode:9000</value>
+    </property>
+
+    <!-- Hadoop temporary directory -->
+    <property>
+        <name>hadoop.tmp.dir</name>
+        <value>/app/hadoop/tmp</value>
+        <description>A base for other temporary directories.</description>
+    </property>
+
+    <!-- Setting for enabling trash -->
+    <property>
+        <name>fs.trash.interval</name>
+        <value>1440</value>
+        <description>Number of minutes after which the checkpoint gets deleted. If zero, the trash feature is disabled. This option may be configured both on the server and the client. If trash is disabled server side, the client side configuration is checked. If trash is enabled on the server side, the value configured on the server is used and the client configuration value is ignored.</description>
+    </property>
+</configuration>

@@ -1,0 +1,37 @@
+<configuration>
+    <!-- Directory where NameNode stores the namespace and transaction logs -->
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:///hadoop/hdfs/namenode</value>
+    </property>
+
+    <!-- Directory where DataNodes store their blocks -->
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:///hadoop/hdfs/datanode</value>
+    </property>
+
+    <!-- Default block replication -->
+    <property>
+        <name>dfs.replication</name>
+        <value>3</value>
+    </property>
+
+    <!-- Enable permission checking on HDFS -->
+    <property>
+        <name>dfs.permissions</name>
+        <value>true</value>
+    </property>
+
+    <!-- Secondary NameNode HTTP address -->
+    <property>
+        <name>dfs.namenode.secondary.http-address</name>
+        <value>0.0.0.0:9868</value>
+    </property>
+
+    <!-- WebHDFS enabled -->
+    <property>
+        <name>dfs.webhdfs.enabled</name>
+        <value>true</value>
+    </property>
+</configuration>
